@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+header {
+    background-color: #fff; /* Set white background color */
+    padding: 10px 0; /* Add padding */
+    display: flex; /* Flexbox for aligning items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Align items with space between */
+}
+
+.logo {
+    margin-right: 20px; /* Add spacing between logo and menu */
+}
+
+.logo img {
+    width:100px; /* Set width of the symbol */
+    height: 80px; /* Set height of the symbol */
+    margin-left: 20px;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    display: flex; /* Display menu items horizontally */
+    justify-content: center; /* Center menu items */
+}
+
+nav li {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: black;
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    margin-right: 60px;
+}
+
+.social-icons img {
+    margin-right: 20px;
+    width: 30px;
+}
+.background-image {
+    position: relative;
+    background-image: url('heroimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.small-text {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 26px;
+    padding: 14px 120px;
+    margin-left: 20px;
+}
+.paragraphs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    padding: 70px;
+    text-align: center;
+}
+.paragraph {
+    font-size: 14px;
+    color: #000;
+    margin: 0px 10px;
+}
+.main-content {
+    text-align: center;
+    background-color: rgb(237, 236, 236);
+    padding: 60px;
+}
+.section-header {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.card {
+    width: 270px;
+    text-align: center;
+    padding: 10px;
+}
+.card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;   
+}
+
+@media only screen and (max-width: 768px) {
+    .background-image {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .small-text {
+        font-size: 18px;
+        padding: 10px;
+        bottom: 30px;
+    }
+
+    .section-header {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .card {
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+
+    .button {
+        padding: 8px 30px;
+        margin-top: 10px;
+    }
+}
